@@ -1,0 +1,14 @@
+<p>form-test works!</p>
+
+<form [formGroup]="group">
+    <div class="input-group">
+            <input class="form-control" type="text" name="name" formControlName="name">
+            <input class="form-control" type="date" name="birthdate" formControlName="birthdate">
+            <input class="form-control" type="date" name="death" formControlName="death">
+            
+        </div>
+        <br>
+        <p>{{group.controls["name"].value}}</p>
+        <p>{{group.controls["birthdate"].value}}</p>
+        <p>{{group.controls["death"].value}}</p>
+</form>
